@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\styles\submit.css">
+    <link rel="stylesheet" href="..\styles\notification.css">
+    <title>Submit</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="submit.html">Dashboard</a></li>
+                <li><a href="list.html">Home</a></li>
+                <li><a href="admin.html" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Soumettre Les Données</h1>
+    <form id="electronForm">
+        <div>
+            <label for="sub_family">Sous Famille :</label>
+            <input type="text" id="sub_family" name="sub_family" required>
+        </div>
+        <div>
+            <label for="brand">Marque :</label>
+            <input type="text" id="brand" name="brand" required>
+        </div>
+        <div>
+            <label for="model">Modèle :</label>
+            <input type="text" id="model" name="model" required>
+        </div>
+        <div>
+            <label for="code_onee">Code ONEE :</label>
+            <input type="text" id="code_onee" name="code_onee" required>
+        </div>
+        <div>
+            <label for="serial_number">N/S :</label>
+            <input type="text" id="serial_number" name="serial_number" required>
+        </div>
+        <div>
+            <label for="m_a">Matricule Affectataire :</label>
+            <input type="text" id="m_a" name="m_a" required>
+        </div>
+        <div>
+            <label for="name_function">Nom & Prénom :</label>
+            <input type="text" id="name_function" name="name_function" required>
+        </div>
+        <div>
+            <label for="entity">Entité :</label>
+            <input type="text" id="entity" name="entity" required>
+        </div>
+        <div>
+            <label for="remarks">Remarque :</label>
+            <input type="text" id="remarks" name="remarks">
+        </div>
+        <input type="submit" value="Soumettre">
+    </form>
+
+    <div id="notification">
+        Data submitted successfully.
+    </div>
+
+    <script src="..\js\submit.js"></script>
+</body>
+
+</html>

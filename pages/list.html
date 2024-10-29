@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data List</title>
+    <link rel="stylesheet" href="..\styles\list.css">
+    <link rel="stylesheet" href="..\styles\print.css" media="print">
+    <link rel="stylesheet" href="..\styles\modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="submit.html">Dashboard</a></li>
+                <li><a href="list.html">Home</a></li>
+                <li><a href="admin.html" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>Data List</h1>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search...">
+            </div>
+            <table id="data-list">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Sous Famille</th>
+                        <th>Marque</th>
+                        <th>Modèle</th>
+                        <th>Code ONEE</th>
+                        <th>N/S</th>
+                        <th>Matricule Affectataire</th>
+                        <th>Nom & Prénom</th>
+                        <th>Entité</th>
+                        <th>Remarque</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be inserted here dynamically -->
+                </tbody>
+            </table>
+            
+            <div class="print-container">
+                <button id="print-btn">Print</button>
+            </div>
+            <!-- Modal Structure -->
+            <div id="edit-modal" class="modal">
+                <div class="modal-content">
+                    <h2>Edit Row</h2>
+                    <form id="edit-form">
+                        <!-- Fields will be generated dynamically -->
+                    </form>
+                    <div class="modal-actions">
+                        <button id="save-btn">Save</button>
+                        <button id="cancel-btn" class="cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <script src="..\js\list.js"></script>
+        <script src="..\components\print.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.13/jspdf.plugin.autotable.min.js"></script>
+</body>
+
+</html>
